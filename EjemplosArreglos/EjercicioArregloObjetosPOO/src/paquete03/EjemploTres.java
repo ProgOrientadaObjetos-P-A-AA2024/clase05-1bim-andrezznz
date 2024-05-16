@@ -10,8 +10,12 @@ import paquete01.Calificacion;
 public class EjemploTres {
     public static void main(String[] args) {
         // crear un arreglo de objetos de tipo Calificacion
-        Calificacion [] calificaciones = {new Calificacion(10, "Computación"), 
-            new Calificacion(9, "Electrónica")};
+        Calificacion [] calificaciones = {
+            
+            new Calificacion(10, "Computación"), 
+            new Calificacion(9, "Electrónica")
+        // objeto anonimo, en ningun momento se asigna un valor
+        };
         
         for (int i = 0; i < calificaciones.length; i++) {
             Calificacion objetoCalificacion = calificaciones[i];
