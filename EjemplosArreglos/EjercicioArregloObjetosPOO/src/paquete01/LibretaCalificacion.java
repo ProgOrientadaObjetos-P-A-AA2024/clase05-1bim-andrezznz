@@ -31,7 +31,12 @@ public class LibretaCalificacion {
         double suma = 0;
         
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
-            suma = suma + obtenerCalificaciones()[i].obtenerNota();
+            
+            Calificacion c = obtenerCalificaciones()[i]; // objeto c
+            
+            suma = suma + c.obtenerNota();
+            
+            // suma = suma + obtenerCalificaciones()[i].obtenerNota();
             
         }
         
