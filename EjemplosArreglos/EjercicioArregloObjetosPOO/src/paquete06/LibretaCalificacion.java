@@ -85,8 +85,9 @@ public class LibretaCalificacion {
         cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
                 obtenerEstudiante());
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
-            cadena = String.format("%s\t\t%s - %s [%.2f]\n", cadena,
+            cadena = String.format("%s\t\t%s - %s - %s [%.2f]\n", cadena,
                     obtenerCalificaciones()[i].obtenerProfesor().obtenerNombre(),
+                    obtenerCalificaciones()[i].obtenerProfesor().obtenerTipo(),
                     obtenerCalificaciones()[i].obtenerNombreMateria(),
                     obtenerCalificaciones()[i].obtenerNota());
         }
